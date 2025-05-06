@@ -1,0 +1,23 @@
+name: Generate PD Graph
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install R
+        run: sudo apt-get install r-base
+
+      - name: Run R script
+        run: Rscript script.R
+
+      - name: Upload Graph
+        uses: actions/upload-artifact@v3
+        with:
+          name: generated_graph
+          path: output_graph.png
