@@ -6,9 +6,7 @@ library(dplyr)
 library(stringr)
 library(tm)
 library(data.table)
-
-#Set your Working Directory. This is what mine is:
-setwd("C:/Users/AlexandriaVanWhy/OneDrive - USDA/Desktop/Projects/Chelcy's PD Project/WordHistogram/PDs")
+# !!! MAKE SURE TO UPLOAD YOUR FILE BEFORE RUNNING !!!
 
 # Function to extract text from a specific section of the document
 extract_text_from_section <- function(file_path, start_keyword) {
