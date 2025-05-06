@@ -1,12 +1,3 @@
-#Might need this, but probably not:
-#install.packages("googlesheets4")
-#library(googlesheets4)
-
-install.packages("officer")
-install.packages("ggplot2")
-install.packages("readtext")
-install.packages("stringr")
-install.packages("tm")
 
 library(readtext)
 library(officer) 
